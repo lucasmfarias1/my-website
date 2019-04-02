@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-image: linear-gradient(45deg, #00B4FF, #8400FF);
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  font-size: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+h3, h4 {
+  margin-bottom: 1rem;
+  text-align: center
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+hr {
+  margin: 1rem;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 50rem;
+  margin: auto;
+  border-radius: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.drop-shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* NAV */
+
+.nav {
+  text-align: center;
+  flex-basis: 25%;
+  margin: 0.4rem;
+  border-radius: 0.1rem;
+  background-color: #fff;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.nav__logo {
+  /* height: 32px; */
+}
+
+.nav__link {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  background-color: rgba(0, 179, 255, 0.2);
+  transition: 0.2s background;
+}
+
+.nav__link:hover {
+  background-color: rgba(0, 179, 255, 0.4);
+}
+
+.nav__foto-perfil {
+  width: 6rem;
+  border-radius: 50%;
+  margin-top: 0.9rem;
+}
+
+/* HEADER */
+
+.header {
+  border-radius: 0.1rem;
+  flex-basis: 80%;
+  margin: 0.4rem;
+  margin-left: 0;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+/* STACK */
+
+.stack {
+  border-radius: 0.1rem;
+  flex-basis: 80%;
+  margin: 0.4rem;
+  margin-left: 0;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.stack__langs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stack__lang {
+  position: relative;
+}
+
+.stack__lang-img {
+  width: 38px;
+  height: 38px;
+  margin: 0 0.4rem;
+  filter: grayscale(0.5);
+}
+
+.stack__lang:hover .stack__lang-img {
+  filter: grayscale(0);
+}
+
+.stack__tooltip {
+  pointer-events:none;
+  white-space: nowrap;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 0.1rem;
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  top: -90%;
+  transform: translateX(-50%);
+}
+
+.stack__lang:hover .stack__tooltip {
+  visibility: visible;
+}
