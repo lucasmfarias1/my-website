@@ -5,6 +5,8 @@
   <title>Lucas Manzano</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css">
+  <link rel="icon" href="./assets/images/favicon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -17,6 +19,11 @@
         class="nav__foto-perfil">
       <h1>Lucas Manzano</h1>
       <h2>Desenvolvedor web full stack</h2>
+
+      <a href="#" class="nav__menu-toggle">
+        <img src="./assets/images/icons/menu.png" alt="menu">
+      </a>
+
       <a href="#"
         data-target='stack'
         id="stack-link"
@@ -90,119 +97,47 @@
     </div>
 
     <div class="stack drop-shadow" id="projetos">
-      <h3>Meus Projetos</h3>
-      <div class="stack__langs">
-        <div class="stack__lang">
-          <img src="assets/images/icons/ruby.svg"alt="Ruby" class="stack__lang-img">
-          <span class="stack__tooltip">Ruby</span>
+      <h3>DuoQ</h3>
+      <div class="project">
+        <div class="project__logo-box">
+          <img class="project__logo" src="assets/images/duoq.png" alt="DuoQ">
         </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/rails.svg"alt="Ruby on Rails" class="stack__lang-img">
-          <span class="stack__tooltip">Ruby on Rails</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/html.svg" alt="HTML" class="stack__lang-img">
-          <span class="stack__tooltip">HTML</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/css.svg" alt="CSS" class="stack__lang-img">
-          <span class="stack__tooltip">CSS</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/js.svg" alt="JavaScript" class="stack__lang-img">
-          <span class="stack__tooltip">JavaScript</span>
-        </div>
+        <p class="project__text">
+          DuoQ é um web app que realiza matchmaking de jogadores de League of Legends para jogarem em dupla (duo) nos moldes de dating apps como o Tinder. Utiliza OmniAuth através do Facebook, com Devise, para autenticação. Logo e design feitos em parceria com designer gráfica.
+        </p>
+        <a class="project__link" href="https://duoq.herokuapp.com/">Visite</a>
       </div>
-      <p class="stack__text">
-        Estas são as ferramentas que eu utilizo nos meus projetos pessoais, portanto, são o principal alvo do meu foco. Tenho como um de meus princípios desenvolver minhas habilidades e conhecimentos nos fundamentos destas linguagens, e com isto em mente procuro evitar o uso excessivo de bibliotecas e frameworks, para me manter flexível e em controle como desenvolvedor.
-      </p>
 
       <hr>
       
-      <h3>Outras Ferramentas</h3>
-      <div class="stack__langs">
-        <div class="stack__lang">
-          <img src="assets/images/icons/php.svg"alt="PHP" class="stack__lang-img">
-          <span class="stack__tooltip">PHP</span>
+      <h3>SoloKill</h3>
+      <div class="project">
+        <div class="project__logo-box">
+          <img class="project__logo" src="assets/images/solokill.png" alt="DuoQ">
         </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/ci.svg"alt="CodeIgniter" class="stack__lang-img">
-          <span class="stack__tooltip">CodeIgniter</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/jquery.svg"alt="jQuery" class="stack__lang-img">
-          <span class="stack__tooltip">jQuery</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/postgres.svg"alt="PostgreSQL" class="stack__lang-img">
-          <span class="stack__tooltip">PostgreSQL</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/react.svg"alt="React" class="stack__lang-img">
-          <span class="stack__tooltip">React</span>
-        </div>
+        <p class="project__text">
+            SoloKill é um web app desenvolvido para ser um clone do Twitter que usa a API da Riot Games para integrar a conta do usuário com sua conta do jogo League of Legends e representar o usuário com seu nome de jogador. Utiliza OAuth através do Facebook, com Devise, para autenticação.
+        </p>
+        <a class="project__link" href="https://lolsolokill.herokuapp.com/">Visite</a>
       </div>
-      <p class="stack__text">
-        Atualmente estou estagiando na Fatec-RL, e por lá PHP e CodeIgniter são as ferramentas que utilizamos no backend. Outras tecnologias não listadas aqui podem ser um trabalho em progresso ainda. No momento estou aprendendo React.
-      </p>
     </div>
 
     <div class="stack drop-shadow" id="contato">
       <h3>Contato</h3>
-      <div class="stack__langs">
-        <div class="stack__lang">
-          <img src="assets/images/icons/ruby.svg"alt="Ruby" class="stack__lang-img">
-          <span class="stack__tooltip">Ruby</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/rails.svg"alt="Ruby on Rails" class="stack__lang-img">
-          <span class="stack__tooltip">Ruby on Rails</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/html.svg" alt="HTML" class="stack__lang-img">
-          <span class="stack__tooltip">HTML</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/css.svg" alt="CSS" class="stack__lang-img">
-          <span class="stack__tooltip">CSS</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/js.svg" alt="JavaScript" class="stack__lang-img">
-          <span class="stack__tooltip">JavaScript</span>
-        </div>
-      </div>
-      <p class="stack__text">
-        Estas são as ferramentas que eu utilizo nos meus projetos pessoais, portanto, são o principal alvo do meu foco. Tenho como um de meus princípios desenvolver minhas habilidades e conhecimentos nos fundamentos destas linguagens, e com isto em mente procuro evitar o uso excessivo de bibliotecas e frameworks, para me manter flexível e em controle como desenvolvedor.
-      </p>
+      <div class="contato">
+        <p>lucasmfarias1@gmail.com</p>
+        <p>+55 (13) 9 9671-7047</p>
+        <p><a class="contato__curriculo" href="./assets/docs/curriculo-manzano.pdf">Currículo</a></p>
 
-      <hr>
-      
-      <h3>Outras Ferramentas</h3>
-      <div class="stack__langs">
-        <div class="stack__lang">
-          <img src="assets/images/icons/php.svg"alt="PHP" class="stack__lang-img">
-          <span class="stack__tooltip">PHP</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/ci.svg"alt="CodeIgniter" class="stack__lang-img">
-          <span class="stack__tooltip">CodeIgniter</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/jquery.svg"alt="jQuery" class="stack__lang-img">
-          <span class="stack__tooltip">jQuery</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/postgres.svg"alt="PostgreSQL" class="stack__lang-img">
-          <span class="stack__tooltip">PostgreSQL</span>
-        </div>
-        <div class="stack__lang">
-          <img src="assets/images/icons/react.svg"alt="React" class="stack__lang-img">
-          <span class="stack__tooltip">React</span>
-        </div>
+        <div class="stack__langs">
+            <a href="https://www.linkedin.com/in/lucasmfarias/" target="_blank" class="stack__lang">
+              <img src="assets/images/icons/linkedin.png" alt="LinkedIn" class="stack__lang-img">
+            </a>
+            <a href="https://github.com/lucasmfarias1" target="_blank" class="stack__lang">
+              <img src="assets/images/icons/github.png" alt="GitHub" class="stack__lang-img">
+            </a>
+          </div>
       </div>
-      <p class="stack__text">
-        Atualmente estou estagiando na Fatec-RL, e por lá PHP e CodeIgniter são as ferramentas que utilizamos no backend. Outras tecnologias não listadas aqui podem ser um trabalho em progresso ainda. No momento estou aprendendo React.
-      </p>
     </div>
 
   </div>

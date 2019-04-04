@@ -47,6 +47,10 @@ a {
   color: #000;
 }
 
+p {
+  margin: 1.2rem 0;
+}
+
 hr {
   width: 90%;
   margin: auto;
@@ -83,9 +87,6 @@ hr {
   align-items: center;
 }
 
-.nav__logo {
-  /* height: 32px; */
-}
 
 .nav__link {
   width: 100%;
@@ -95,6 +96,9 @@ hr {
   transition: 0.2s background;
 }
 
+.nav__active {
+  background-color: rgba(0, 179, 255, 0.6);
+}
 .nav__link:hover {
   background-color: rgba(0, 179, 255, 0.4);
 }
@@ -105,15 +109,9 @@ hr {
   margin-top: 0.9rem;
 }
 
-/* HEADER */
-
-.header {
-  border-radius: 0.1rem;
-  flex-basis: 80%;
-  margin: 0.4rem;
-  margin-left: 0;
-  background-color: #fff;
-  padding: 2rem;
+.nav__menu-toggle {
+  display: none;
+  cursor: default;
 }
 
 /* STACK */
@@ -169,4 +167,51 @@ hr {
 
 .stack__text {
   margin: 1.2rem 0;
+}
+
+/* PROJETO */
+
+.project {
+  display: flex;
+  align-items: center;
+}
+
+.project__text {
+  margin-top: 0;
+  flex: 3;
+}
+
+.project__logo-box {
+  flex: 1;
+  padding: 1rem;
+}
+
+.project__logo {
+  max-width: 100%;
+}
+
+.project__link {
+  display: inline-block;
+  margin: 1rem;
+  padding: .4rem .8rem;
+  border: 1px solid #00B4FF;
+  border-radius: 0.2rem;
+  font-weight: 700;
+  text-align: center;
+  transition: .2s background;
+}
+
+.project__link:hover {
+  background-color: #00B4FF;
+}
+
+/* CONTATO */
+
+.contato {
+  text-align: center;
+}
+
+.contato__curriculo {
+  text-decoration: underline;
+  color: rgb(5, 42, 58);
 }

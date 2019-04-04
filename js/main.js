@@ -20,3 +20,7 @@ const switchPage = (e) => {
 }
 
 $(".nav__link").click(switchPage);
+
+$(".nav__menu-toggle img").click(() => {
+  $(".nav__link").slideToggle();
+});
